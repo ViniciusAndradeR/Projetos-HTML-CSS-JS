@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 60%, rgba(36,36,36,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    border-radius: 2px;
+}
+
+.player-container {
+    background: linear-gradient(219deg, rgba(0,0,0,1) 0%, rgb(24, 24, 24) 10%, rgb(40, 40, 40) 100%);
+    border-radius: 2px;
+    width: 400px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.player-info {
+    background-color: rgb(15, 95, 185);
+    border-bottom: 1px solid rgb(6, 75, 155);
+    border-radius: 2px 2px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.div-weapon {
+    width: 120px;
+    margin-left: 8px;
+}
+
+.div-weapon img {
+    width: 100%;
+    margin-top: 6px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.name-health {
+    display: flex;
+}
+
+.name-health div {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.name-health .health {
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.player-stats {
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding-right: 64px;
+    padding-top: 6px;
+    padding-bottom: 2px;
+}
+
+.kills, .deaths {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    font-weight: bold;
+}
+
+.kills-sight, .death-icon {
+    padding-top: 2px;
+}
+
+.kills img, .deaths img {
+    width: 16px;
+    padding-right: 4px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.player-equip {
+    display: flex;
+    justify-content: end;
+    padding-right: 32px;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.money-amount {
+    padding-right: 28px;
+    color: rgb(11, 184, 11);
+    font-weight: bold;
+}
+
+.armor img {
+    width: 20px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.player-number {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    right: -15px;
+    top: 26%;
+}
+
+.footer {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer a {
+    color: white;
+}

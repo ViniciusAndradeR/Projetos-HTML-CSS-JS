@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Video Overlay</title>
+  </head>
+  <body>
+    <!-- 
+      pre-loader: elemento que aparecerá na tela do usuário 
+      enquanto todos os elementos, inclusive elementos 
+      dependentes como folhas de estilos e scripts em javascript
+      não tenham sido carregados.
+    -->
+    <div class="preloader">
+      <img src="./preloader.gif" alt="preloader" />
+    </div>
+    <!-- header -->
+    <header>
+      <video class="video-container" muted autoplay loop>
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+      <h1>Video Overlay</h1>
+      <!-- botão switch play/pause -->
+      <button class="switch-btn">
+        <span> play </span>
+        <span> pause </span>
+        <span class="switch"> </span>
+      </button>
+    </header>
+    <footer class="footer">
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/ViniciusAndradeR" target="_blank"
+          >Vinicius A. Ribeiro (GitHub)</a
+        >
+        em 13/09/2022.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

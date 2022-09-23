@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube.com</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+
+            /* Estilos Gerais */
+            body {
+                margin: 0;
+                padding-top: 80px;
+                padding-left: 100px;
+                padding-right: 20px;
+                background-color: rgb(248, 248, 248);
+                
+            }
+
+            p {
+                font-family: Roboto, Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            /* Estilos da Barra de Cabeçalho */
+            .header {
+                height: 55px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: white;
+                border-bottom: 1px solid rgb(223, 223, 223);
+            }
+
+            .left-section {
+                display: flex;
+                align-items: center;
+            }
+
+            .middle-section {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                margin-left: 70px;
+                margin-right: 35px;
+                max-width: 500px;
+            }
+
+            .right-section {
+                width: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .hamburger-menu {
+                height: 24px;
+                margin-left: 24px;
+                margin-right: 24px;
+                cursor: pointer;
+            }
+
+            .youtube-logo {
+                height: 20px;
+                cursor: pointer;
+            }
+
+            .search-button {
+                height: 40px;
+                width: 60px;
+                background-color: rgb(241, 241, 241);
+                border: 1px solid rgb(192, 192, 192);
+                border-radius: 2px;
+                margin-left: -1px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            .search-icon {
+                height: 25px;
+                margin-top: 4px;
+                margin-left: 2px;
+            }
+
+            .voice-search-button {
+                height: 40px;
+                width: 40px;
+                background-color: rgb(241, 241, 241);
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .voice-search-icon {
+                height: 25px;
+                margin-top: 4px;
+            }
+
+            .barra-pesquisa {
+                margin-left: 10px;
+                flex: 1;
+                height: 36px;
+                padding-left: 10px;
+                font-size: 16px;
+                border: 1px solid rgb(192, 192, 192);
+                border-radius: 2px;
+                box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+                width: 0;
+            }
+
+            .barra-pesquisa::placeholder {
+                font-family: Roboto, Arial;
+                font-size: 16px;
+            }
+
+            .create-button { 
+                background-color: white;
+                height: 30px;
+                width: 40px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .create-icon {
+                height: 25px;
+                padding: 0;
+            }
+
+            .apps-button { 
+                background-color: white;
+                height: 30px;
+                width: 40px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .apps-icon {
+                height: 25px;
+                padding: 0;
+            }
+
+            .notifications-button { 
+                background-color: white;
+                height: 30px;
+                width: 40px;
+                border: none;
+                cursor: pointer;
+                position: relative;
+            }
+
+            .notifications-icon {
+                height: 25px;
+                padding: 0;
+            }
+
+            .qtt-notifications {
+                position: absolute;
+                top: -3px;
+                right: -1px;
+                background-color: rgb(209, 43, 43);
+                color: white;
+                font-family: Roboto, Arial;
+                font-size: 10px;
+                vertical-align: middle;
+                padding-right: 6px;
+                padding-left: 6px;
+                padding-top: 2px;
+                padding-bottom: 0px;
+                height: 16px;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+
+            .profile-button { 
+                background-color: white;
+                height: 50px;
+                width: 50px;
+                margin-right: 10px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .profile-icon {
+                height: 35px;
+                padding: 0;
+            }
+
+            /* Estilos da barra de menu esquerdo */
+
+            .side-bar {
+                background-color: white;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                top: 55px;
+                width: 72px;
+                justify-content: center;
+            }
+
+            .sidebar-link {
+                height: 75px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .sidebar-link:hover {
+                background-color: rgb(241, 241, 241);
+            }
+
+            .sidebar-link img {
+                height: 24px;
+                padding-bottom: 4px;
+            }
+
+            .sidebar-link div {
+                font-family: Roboto, Arial;
+                font-size: 10px;
+            }
+
+            /* Estilos do Grid de Vídeos */
+            .video-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 18px;
+                row-gap: 30px;
+            }
+
+            .video-info-grid {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            .thumbnail {
+                width: 100%;
+            }
+
+            .timestamp {
+                font-weight: bold;
+                padding: 3px;
+                background-color: rgb(39, 39, 39);
+                color: white;
+                border-radius: 3px;
+                position: absolute;
+                bottom: 8px;
+                right: 6px;
+            }
+
+            .foto-canal {
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            .video-titulo {
+                margin-top: 0;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 18px;
+                margin-bottom: 12px;
+            }
+
+            .video-autor,
+            .video-stats {
+                font-size: 12px;
+                color:rgb(96, 96, 96);
+            }
+
+            .video-autor {
+                margin-bottom: 4px;
+            }
+
+            .thumbnail-row {
+                margin-bottom: 12px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="https://supersimple.dev/public/img/exercises/youtube/icons/hamburger-menu.svg" alt="Menu">
+                <img class="youtube-logo" src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-logo.svg" alt="Logo YouTube">
+            </div>
+            <div class="middle-section">
+                <input type="text" placeholder="Pesquisar" class="barra-pesquisa">
+                <button class="search-button">
+                    <img class="search-icon" src="https://supersimple.dev/public/img/exercises/youtube/icons/search.svg" alt="Botão Pesquisar">
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="https://supersimple.dev/public/img/exercises/youtube/icons/voice-search-icon.svg" alt="Botão Falar">
+                </button>
+            </div>
+            <div class="right-section">
+                <button class="create-button">
+                    <img src="https://supersimple.dev/public/img/exercises/youtube/icons/upload.svg" alt="Botão de Criar" class="create-icon">
+                </button>
+                <button class="apps-button">
+                    <img src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-apps.svg" alt="Botão de Apps" class="apps-icon">
+                </button>
+                <button class="notifications-button">
+                    <img src="https://supersimple.dev/public/img/exercises/youtube/icons/notifications.svg" alt="Botão de Notificações" class="notifications-icon">
+                    <div class="qtt-notifications">3</div>
+                </button>
+                <button class="profile-button">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/account-avatar-profile-human-man-user-30448.png" alt="Perfil" class="profile-icon">
+                </button>
+            </div>
+        </div>
+
+        <div class="side-bar">
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/explore.svg">
+                <div>Explorar</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/subscriptions.svg">
+                <div>Inscrições</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-music.svg">
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/library.svg">
+                <div>Biblioteca</div>
+            </div>
+        </div>
+        
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-1.webp" alt="Thumbnail">
+                    <div class="timestamp">14:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="foto-perfil">
+                        <img class="foto-canal" src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="Foto de Perfil">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-titulo">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class="video-autor">
+                            Marques Brownlee
+                        </p>
+                        <p class="video-stats">
+                            3,4 mi de visualizações &#183; há 5 meses
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-2.webp" alt="Thumbnail">
+                    <div class="timestamp">12:22</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="foto-perfil">
+                        <img class="foto-canal" src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-2.jpeg" alt="Foto de Perfil">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-titulo">
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class="video-autor">
+                            Markiplier
+                        </p>
+                        <p class="video-stats">
+                            19 mi de visualizações &#183; há 4 anos
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-3.webp" alt="Thumbnail">
+                    <div class="timestamp">6:55</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="foto-perfil">
+                        <img class="foto-canal" src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-3.jpeg" alt="Foto de Perfil">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-titulo">
+                            Crazy Tik Toks Taken Moments Before DISASTER
+                        </p>
+                        <p class="video-autor">
+                            SSSniperWolf
+                        </p>
+                        <p class="video-stats">
+                            12 mi de visualizações &#183; há 1 ano
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-4.webp" alt="Thumbnail">
+                    <div class="timestamp">23:42</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="foto-perfil">
+                        <img class="foto-canal" src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-4.jpeg" alt="Foto de Perfil">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-titulo">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </p>
+                        <p class="video-autor">
+                            Veritasium
+                        </p>
+                        <p class="video-stats">
+                            18 mi de visualizações &#183; há 4 meses
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-5.webp" alt="Thumbnail">
+                    <div class="timestamp">31:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="foto-perfil">
+                        <img class="foto-canal" src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-5.jpeg" alt="Foto de Perfil">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-titulo">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                        <p class="video-autor">
+                            CS Dojo
+                        </p>
+                        <p class="video-stats">
+                            519 mil visualizações &#183; há 5 anos
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-6.webp" alt="Thumbnail">
+                    <div class="timestamp">19:44</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="foto-perfil">
+                        <img class="foto-canal" src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-6.jpeg" alt="Foto de Perfil">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-titulo">
+                            Anything You Can Fit In The Circle I’ll Pay For
+                        </p>
+                        <p class="video-autor">
+                            MrBeast
+                        </p>
+                        <p class="video-stats">
+                            141 mi de visualizações &#183; há 1 ano
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

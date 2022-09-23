@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(39, 129, 202), rgb(10, 75, 128));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(10, 73, 126);
+    color: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+.header {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.email-senha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.email-senha label {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+}
+
+.email-senha label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.6, -0.50, 0.26, 1.55);
+}
+
+.email-senha input:focus + label span,
+.email-senha input:valid + label span {
+    color: lightblue;
+    transform: translateY(-26px);
+}
+
+#email, #senha {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 15px;
+    padding: 8px 0 8px 2px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.container-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-login { 
+    background-color: rgb(127, 192, 245);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 0;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+#btn-login:hover {
+    background-color: rgb(61, 155, 231);
+}
+
+#btn-login:active {
+    transform: scale(0.98);
+}
+
+.container-criar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.container-criar a {
+    color: rgb(142, 195, 238);
+    text-decoration: none;
+}
+
+.container-criar a:hover {
+    color: rgb(105, 169, 221);
+}
+
+
+
+/* Rodapé */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 32px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-weight: bold;
+    transition: .15s;
+}
+
+.footer a:hover {
+    color: crimson;
+}

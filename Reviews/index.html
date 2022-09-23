@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Modelo de Projeto</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="title">
+          <h2>Nossos Reviews</h2>
+          <hr />
+        </div>
+        <arcticle class="review">
+          <div class="img-container">
+            <img src="./profile.png" id="cliente-img" />
+          </div>
+          <h4 id="autor">Vinicius Ribeiro</h4>
+          <p id="job">WEB DEV.</p>
+          <p id="info">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            fugiat rerum expedita qui nam commodi ratione reprehenderit,
+            excepturi quibusdam ducimus laboriosam, nisi recusandae odio aperiam
+            vel quae dolorem pariatur nesciunt.
+          </p>
+          <!-- botões de anterior e próximo -->
+          <div class="btn-container">
+            <button onclick="anterior()" class="anterior-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button onclick="proximo()" class="proximo-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- review aleatoria -->
+          <button onclick="random()" class="random-btn">Aleatório</button>
+        </arcticle>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

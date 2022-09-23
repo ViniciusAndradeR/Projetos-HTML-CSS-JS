@@ -1,0 +1,11 @@
+:root {
+    --corPrincipal: #46344E;
+    --corSecundario: #382a3f;
+    --corBorda: #1d1520;
+    --textoPrincipal: white;
+    --TextoSecundario: #eee;
+    --themeDotBorder: #FFF;
+    --previewBg: rgba(29, 21, 32, 0.8);
+    --previewShadow: #2b202f;
+    --buttonColor: #8534a3;
+}

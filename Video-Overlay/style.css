@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.switch-btn {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switch-btn span {
+    padding: 5px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: rgb(38, 104, 126);
+}
+
+.switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(117, 167, 184);
+    border-radius: 8px;
+    margin: 0;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+.slide {
+    left: 50%;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: visible;
+    transition: all 0.1s linear;
+}
+
+.esconder-preloader {
+    z-index: -999;
+    visibility: hidden;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 32px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transition: .15s;
+}
+
+.footer a:hover {
+    color: crimson;
+}

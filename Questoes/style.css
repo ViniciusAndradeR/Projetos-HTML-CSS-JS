@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Rancho&display=swap');
+
+* {
+    font-family: 'Rancho', cursive;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1495422964407-28c01bf82b0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Nabla', cursive;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 6px 24px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.questao {
+    width: 400px;
+    background-color: rgba(240, 248, 255, 0.8);
+    margin-bottom: 24px;
+    padding: 5px 25px;
+    border-radius: 8px;
+}
+
+.questao-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.titulo-questao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.titulo-questao p {
+    width: 350px;
+}
+
+.questao-texto {
+    color: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* ESCONDER TEXTOS */
+.questao-texto {
+    display: none;
+}
+
+.exibir-texto .questao-texto {
+    display: block;
+}
+
+.icone-menos {
+    display: none;
+}
+
+.exibir-texto .icone-menos {
+    display: inline;
+}
+
+.exibir-texto .icone-mais {
+    display: none;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transition: .15s;
+}
+
+.footer a:hover {
+    color: crimson;
+}

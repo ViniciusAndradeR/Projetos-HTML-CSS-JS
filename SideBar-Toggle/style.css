@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(15, 101, 129);
+    font-size: 32px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sidebar-toggle:hover {
+    transform: translate(1px, -1px);
+    color: rgb(7, 74, 97);
+}
+
+.bg-sidebar-toggle {
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: aliceblue;
+    width: 350px;
+    transform: translate(-100%);
+    transition: 0.2s;
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.header a {
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.header button {
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: crimson;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.links, .links-sociais {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: .15s;
+}
+
+.links li:hover {
+    background-color: rgb(212, 233, 252);
+    transform: translateY(-2px);
+}
+
+.links li a {
+    text-decoration: none;
+    color: rgb(15, 101, 129);
+    padding: 20px;
+}
+
+.links-sociais {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-sociais li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.links-sociais li a {
+    font-size: 24px;
+    color: rgb(76, 164, 194);
+    transition: .2s;
+}
+
+.links-sociais li a:hover {
+    color: rgb(28, 115, 145);
+}
+
+.footer {
+    background-color: rgb(60, 128, 187);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transition: .2s;
+}
+
+.footer a {
+    color: white;
+    opacity: 0.8;
+}
+
+.footer a:hover {
+    opacity: 1;
+}
+
+.footer-diminuir {
+    left: 350px;
+}
+
+@media screen and (max-width: 360px) {
+    .sidebar {
+        width: 200px;
+        transition: .5s;
+    }
+
+    .footer {
+        left: 200px;
+    }
+}

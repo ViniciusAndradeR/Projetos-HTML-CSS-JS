@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto - Placar HLTV</title>
+  </head>
+  <body>
+    <!-- 
+      Projeto de replicar o placar de uma partida do jogo CS:GO do site hltv.org
+      Link que encontra-se o placar: https://www.hltv.org/matches/2357705/natus-vincere-vs-ninjas-in-pyjamas-esl-pro-league-season-16
+      Por: Vinicius Andrade Ribeiro em 05/09/2022
+     -->
+
+    <div class="container">
+      <div class="left-team">
+        <img src="imagens/ukraine.webp" class="team-country" />
+        <div class="team-logo">
+          <img class="img-team-logo" src="imagens/navi.svg" alt="Navi Team" />
+        </div>
+        <div class="team-name">Natus Vincere</div>
+        <div class="team-score" id="loser-team">1</div>
+      </div>
+      <div class="score-info">
+        <div class="match-time">14:30</div>
+        <div class="match-day">4 de Setembro de 2022</div>
+        <div class="tournament-info">ESL Pro League Season 16</div>
+        <div class="match-current-info">Partida encerrada</div>
+      </div>
+      <div class="right-team">
+        <img src="imagens/sweden.webp" class="team-country" />
+        <div class="team-logo">
+          <img class="img-team-logo" src="imagens/nip.webp" alt="NIP Team" />
+        </div>
+        <div class="team-name">Ninjas in Pijamas</div>
+        <div class="team-score" id="winner-team">2</div>
+      </div>
+    </div>
+    <div class="footer">
+      <span
+        >Desenvolvido por
+        <a href="https://github.com/ViniciusAndradeR" target="_blank"
+          >Vinicius A. Ribeiro (GitHub)</a
+        >
+        em 05/09/2022</span
+      >
+    </div>
+  </body>
+</html>

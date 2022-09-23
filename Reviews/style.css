@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.container hr {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    width: 60%;
+    background-color: rgb(134, 197, 218);
+    height: 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cliente-img {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review p {
+    text-align: center;
+}
+
+#autor {
+    letter-spacing: 4px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#job {
+    text-transform: uppercase;
+    color: rgb(46, 121, 146);
+}
+
+#info {
+    height: 80px;
+    opacity: 0.9;
+}
+
+.btn-container {
+    padding: 10px;
+}
+
+.anterior-btn, .proximo-btn {
+    border: none;
+    background-color: white;
+    color: rgb(134, 197, 218);
+    font-size: 24px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.random-btn {
+    background-color: rgba(225, 241, 247, 0.521);
+    border: 2px solid rgb(134, 197, 218);
+    border-radius: 8px;
+    color: rgb(46, 121, 146);
+    padding: 6px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}

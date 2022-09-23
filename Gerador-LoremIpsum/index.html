@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Gerador de Lorem Ipsum</title>
+  </head>
+  <body>
+    <section class="header">
+      <h1>Gerador de Lorem Ipsum</h1>
+      <div class="gerador">
+        <p>Parágrafos:</p>
+        <input
+          type="number"
+          id="qtd-paragrafos"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number"
+          maxlength="2"
+          min="0"
+        />
+        <button type="submit" onclick="gerarParagrafos()" id="btn-gerar">
+          Gerar
+        </button>
+      </div>
+    </section>
+    <div class="paragrafos"></div>
+    <footer class="footer">
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/ViniciusAndradeR" target="_blank"
+          >Vinicius A. Ribeiro (GitHub)</a
+        >
+        em 20/09/2022.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

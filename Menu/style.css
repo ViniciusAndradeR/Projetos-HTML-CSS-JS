@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Righteous&display=swap');
+
+* {
+    font-family: 'Fresca', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding-top: 36px;
+    background-color: white;
+    padding-bottom: 36px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    margin-bottom: 16px;
+}
+
+.titulo h1 {
+    font-family: 'Righteous', sans-serif;
+    margin: 0;
+}
+
+.underline {
+    background-color: crimson;
+    width: 60%;
+    height: 3px;
+    border: none;
+    border-radius: 4px;
+}
+
+.botoes-filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: crimson;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(220, 20, 60, 0.5);
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .15s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid rgba(220, 20, 60, 0.9);
+    color: rgb(160, 14, 43);
+}
+
+.btn:active { 
+    background-color: rgb(238, 165, 180);
+    border: 2px solid rgba(236, 53, 89, 0.9);
+    color: rgb(133, 9, 34);
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-item {
+    min-width: 450px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 30px;
+}
+
+.foto {
+    width: 200px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    margin-right: 15px;
+}
+
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item-info h4 {
+    margin: 5px 0 5px 0;
+    font-family: 'Righteous', sans-serif;
+}
+
+.preco {
+    color: crimson;
+}
+
+.item-texto {
+    font-size: 15px;
+    margin: 15px 15px 0 0;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 32px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transition: .15s;
+}
+
+.footer a:hover {
+    color: crimson;
+}
+
+@media (max-width: 1100px){
+    .section-center {
+        grid-template-columns: 1fr;
+    }
+
+    .foto {
+        width: 150px;
+        height: 128px;
+    }
+}
+
+@media (max-width: 600px){
+    .menu-item {
+        width: 430px;
+    }
+
+    .foto {
+        width: 150px;
+        height: 128px;
+    }
+}

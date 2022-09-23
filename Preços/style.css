@@ -1,0 +1,194 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-header, .right-header {
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.left-header div, .right-header div {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.left-header a, .right-header a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   padding: 12px;
+   transition: background-color 0.15s;
+}
+
+.left-header a:hover, .right-header a:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.banner {
+    background: transparent
+    url("imagens/header.jpg")
+    0 0 no-repeat fixed;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    text-shadow: 0 3px 3px black;
+}
+
+.container-precos {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.container-plano {
+    width: 100%;
+    background-color: lightgray;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 6px;
+}
+
+.precos-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.plano-texto {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.plano-preco {
+    font-size: 80px;
+}
+
+.plano-mensal {
+    font-size: 19px;
+    opacity: 0.7;
+}
+
+.pessoal {
+    background-color: #519251;
+}
+
+.pequeno-negocio {
+    background-color: #2C4985;
+}
+
+.empresarial {
+    background-color: rgb(32, 32, 32);
+}
+
+.vantagens {
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.vantagem {
+    font-size: 16px;
+    opacity: 0.9;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+}
+
+.comprar {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-comprar {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn-comprar:hover {
+    opacity: 0.8;
+}
+
+#btn-pessoal {
+    background-color: #3c723c;
+}
+
+#btn-pequeno-negocio {
+    background-color: #19356d;
+}
+
+#btn-empresarial {
+    background-color: #000;
+}
+
+.container-caracteristicas {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 470px 470px;
+    align-items: top;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.caracteristicas {
+    margin-bottom: 50px;
+}
+
+.caracteristicas h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.caracteristicas p {
+ text-align: justify;
+ line-height: 24px;
+}
+
+footer {
+    background-color: black;
+    color: #bbb;
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+}

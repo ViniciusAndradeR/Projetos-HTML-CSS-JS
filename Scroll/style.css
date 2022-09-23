@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INICIO BANNER */
+
+#home {
+    /* https://unsplash.com/photos/SBdmQcW8qag */
+    background-image: url('https://images.unsplash.com/photo-1513297887119-d46091b24bfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    padding: 80px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px black;
+}
+
+.container p, .conteudo-sobre p, .conteudo-servicos p {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+.container p {
+    width: 650px;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    transition: all 0.3s;
+}
+
+.logo {
+    width: 50px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+}
+
+.links li {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.link-menu-topo {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.link-menu-topo:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.link-menu-topo-preto {
+    color: black;
+}
+
+
+/* FIM BANNER */
+/* ------------------------------------------------------ */
+/* INICIO BOTÕES */
+
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 1px;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: background 0.08s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.btn:active {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.btn-preto {
+    color: black;
+    border: 2px solid black;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-preto:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.btn-preto:active {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* FIM BOTÕES */
+/* ------------------------------------------------------ */
+/* INICIO SOBRE */
+
+.conteudo-sobre, .conteudo-servicos, .conteudo-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-sobre p, .conteudo-servicos p, .conteudo-contato p {
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.conteudo-sobre a, .conteudo-servicos a, .conteudo-contato a {
+    margin-bottom: 60px;
+}
+
+.conteudo-sobre-grid {
+    width: 650px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.titulo {
+    text-transform: uppercase;
+}
+
+.titulo h2 span {
+    color: rgb(150, 25, 63);
+}
+
+/* FIM SOBRE */
+/* ------------------------------------------------------ */
+/* INICIO SERVIÇOS */
+
+.conteudo-servicos-grid {
+    width: 650px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.conteudo-contato-grid {
+    width: 650px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.conteudo-contato img {
+    width: 200px;
+}
+
+.dark {
+    background-color: #252525;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer p a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.top-link {
+    font-size: 20px;
+    position: fixed;
+    bottom: 75px;
+    right: 30px;
+    background: rgb(56, 202, 207);
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    color: white;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.exibir-link {
+    visibility: visible;
+    z-index: 100;
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
