@@ -1,0 +1,241 @@
+.secao-destaques {
+    margin-top: 64px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.secao-destaques h2 {
+    color: rgb(182, 16, 49);
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.linha {
+    height: 4px;
+    width: 75px;
+    border-radius: 12px;
+    background-color: rgb(236, 95, 123);
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.container-destaques {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 25px;
+    max-width: 85%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.destaque {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(250,166,91);
+    background: radial-gradient(circle, rgb(250, 181, 121) 0%, rgb(252, 148, 107) 100%);
+    padding: 20px;
+    border-radius: 64px 64px 4px 4px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4); 
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+}
+
+.destaque-modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 26px;
+    border-radius: 64px 64px 4px 4px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
+}
+
+.destaque-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.destaque-imagem img {
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4); 
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
+}
+
+.link-creditos-produto {
+    position: absolute;
+    bottom: 7%;
+    right: 7%;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.destaque-info, 
+.destaque-titulo, 
+.destaque-descricao {
+    text-align: center;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.destaque-titulo {
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 60px;
+}
+
+.destaque-descricao {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.destaque-descricao-modal {
+    margin-top: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.destaque-preco {
+    color: crimson;
+    font-weight: bold;
+}
+
+.saber-mais-div {
+    margin-top: 30px;
+    display: none;
+}
+
+.saber-mais-div a {
+    padding: 7px 12px;
+    background-color: rgb(231, 52, 88);
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.id-registro {
+    display: none;
+}
+
+
+/* Início Modal de Destaque */
+
+.modal-destaque {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .75);
+    transition: all .4s;
+}
+  
+.modal-destaque:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.modal-conteudo-destaque {
+    border-radius: 4px;
+    position: relative;
+    min-width: 240px;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0);
+    margin: 10px;
+    padding: 24px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fechar-modal-destaque {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #ffffff;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 38px;
+}
+
+/* Fim Modal de Destaque */
+
+
+
+
+/* Elementos Responsividade */
+
+@media only screen and (max-width: 1057px) {
+    .container-destaques {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 25px;
+    }
+
+    .destaque {
+        padding: 20px 10px;
+        max-width: 350px;
+        margin: auto;
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .destaque-descricao {
+        display: none;
+    }
+
+    .saber-mais-div {
+        display: block;
+    }
+
+    .destaque-imagem img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .destaque-titulo{
+        height: 65px;
+    }
+}
+
+@media only screen and (max-width: 373px) {
+    .saber-mais-div a {
+        padding: 5px 9px;
+        font-size: 14px;
+        background-color: rgb(231, 52, 88);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+    .destaque-titulo{
+        height: 80px;
+    }
+}

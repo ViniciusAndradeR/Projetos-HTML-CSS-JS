@@ -1,0 +1,106 @@
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .75);
+    transition: all .4s;
+}
+  
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.modal-conteudo {
+    border-radius: 4px;
+    position: relative;
+    min-width: 240px;
+    max-width: 500px;
+    background: #fff;
+    margin: 10px;
+    padding: 24px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-avaliador {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(24, 129, 163);
+    color: white;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.link-creditos-avaliacao {
+    position: absolute;
+    bottom: 7%;
+    right: 7%;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.nome-avaliador {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.texto-avaliacao {
+    margin-top: 20px;
+    text-align: center;
+    height: 150px;
+}
+
+.btn-container {
+    padding: 10px;
+}
+
+.anterior-btn, .proximo-btn {
+    border: none;
+    background-color: white;
+    color: rgb(17, 113, 145);
+    font-size: 24px;
+    margin: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+.fechar-modal {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+

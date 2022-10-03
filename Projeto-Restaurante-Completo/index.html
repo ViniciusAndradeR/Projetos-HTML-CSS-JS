@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/menu-topo.css" />
+		<link rel="stylesheet" href="./css/secao-inicio.css" />
+		<link rel="stylesheet" href="./css/modal.css" />
+		<link rel="stylesheet" href="./css/secao-destaques.css" />
+		<link rel="stylesheet" href="./css/secao-sobre.css" />
+		<link rel="stylesheet" href="./css/secao-contato.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Projeto - Restaurante</title>
+	</head>
+	<body>
+		<!-- Início do Menu Topo -->
+		<nav class="menu-topo" id="inicio">
+			<div class="logo">
+				<img
+					class="img-logo"
+					src="./imagens/icons/logo.png"
+					alt="Logo Restaurante"
+				/>
+				<p class="nome-restaurante">Nome do Restaurante</p>
+			</div>
+			<div class="menu-tela-larga">
+				<ul class="menu-lista">
+					<li class="item-lista"><a href="#inicio">Página Inicial</a></li>
+					<li class="item-lista"><a href="#sobre">Sobre</a></li>
+					<li class="item-lista"><a href="#contato">Contato</a></li>
+				</ul>
+				<a href="./cardapio.html" class="btn">Cardápio</a>
+			</div>
+			<div class="menu-tela-pequena">
+				<div class="hamburger-lista">
+					<i class="fa-solid fa-burger"></i>
+				</div>
+			</div>
+		</nav>
+		<!-- Fim do Menu Topo -->
+
+		<!-- Início do Menu Toggle -->
+		<div class="menu-toggle esconder-menu-toggle">
+			<ul class="menu-lista-burger">
+				<li class="item-lista item-burger">
+					<a href="#inicio">Página Inicial</a>
+				</li>
+				<li class="item-lista item-burger"><a href="#sobre">Sobre</a></li>
+				<li class="item-lista item-burger"><a href="#contato">Contato</a></li>
+			</ul>
+		</div>
+		<!-- Fim do Menu Toggle -->
+
+		<!-- Início da Seção Início -->
+		<section class="secao-inicio">
+			<div class="div-imagem-inicio">
+				<!-- https://unsplash.com/photos/UtcOhVC-3VU -->
+				<img
+					class="img-inicio"
+					src="https://images.unsplash.com/photo-1542528180-a1208c5169a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1477&q=80"
+					alt=""
+				/>
+				<a href="https://unsplash.com/photos/UtcOhVC-3VU" target="_blank"
+					><i class="link-creditos fa-solid fa-up-right-from-square"></i
+				></a>
+			</div>
+			<div class="div-resumo-inicio">
+				<h1>
+					Não é apenas comida, é uma
+					<span style="font-family: 'Dancing Script', cursive; color: crimson"
+						>Experiência</span
+					>
+				</h1>
+				<div class="botoes-inicio">
+					<a href="./cardapio.html" target="_blank" class="btn">Cardápio</a>
+					<a href="#contato" class="btn btn-vermelho">Reserve uma Mesa</a>
+				</div>
+				<div class="reviews">
+					<h2>Avaliações</h2>
+					<div class="avaliacoes">
+						<!-- https://unsplash.com/photos/WNoLnJo7tS8 -->
+						<a href="#demo-modal">
+							<img
+								src="https://unsplash.com/photos/WNoLnJo7tS8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0MzEwMjQ1&force=true&w=160"
+								alt="Avaliação"
+								class="avaliacao"
+							/>
+						</a>
+						<!-- https://unsplash.com/photos/bqe0J0b26RQ -->
+						<a href="#demo-modal">
+							<img
+								src="https://unsplash.com/photos/bqe0J0b26RQ/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NzF8fHBlcnNvbnxlbnwwfHx8fDE2NjQzMDE3Nzg&force=true&w=160"
+								alt="Avaliação"
+								class="avaliacao"
+							/>
+						</a>
+						<!-- https://unsplash.com/photos/s4nS3munSg8 -->
+						<a href="#demo-modal">
+							<img
+								src="https://unsplash.com/photos/s4nS3munSg8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0MzIyMTQ4&force=true&w=160"
+								alt="Avaliação"
+								class="avaliacao"
+							/>
+						</a>
+						<!-- https://unsplash.com/photos/9kQBQqY_xrk -->
+						<a href="#demo-modal">
+							<img
+								src="https://unsplash.com/photos/9kQBQqY_xrk/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0MzIyMjAz&force=true&w=160"
+								alt="Avaliação"
+								class="avaliacao"
+							/>
+						</a>
+						<a class="link-avaliacao" href="#demo-modal">
+							<div class="avaliacao mais-avaliacoes">12+</div>
+						</a>
+					</div>
+					<div class="cinco-estrelas">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Início do Modal de Avaliações Apenas CSS (no JS) -->
+			<div id="demo-modal" class="modal">
+				<!-- Conteúdo do Modal será preenchido com dados capturados
+              com Javascript de um array de objetos -->
+				<div class="modal-conteudo"></div>
+			</div>
+			<!-- Fim do Modal de Avaliações Apenas CSS (no JS) -->
+		</section>
+		<!-- Fim da Seção Início -->
+
+		<!-- Início da Seção Destaques -->
+		<section class="secao-destaques" id="id-destaque">
+			<h2>Destaques</h2>
+			<div class="linha"></div>
+			<!-- Os Produtos em Destaques serão preenchidos com JS -->
+			<div class="container-destaques"></div>
+
+			<!-- Início do Modal de Destaque Apenas CSS (no JS) -->
+			<div id="saber-mais-modal" class="modal-destaque">
+				<!-- Conteúdo do Modal será preenchido com dados capturados
+              com Javascript de um array de objetos -->
+				<div class="modal-conteudo-destaque">
+					<a href="#id-destaque" class="fechar-modal">&times;</a>
+				</div>
+			</div>
+			<!-- Fim do Modal de Destaque Apenas CSS (no JS) -->
+		</section>
+		<!-- Fim da Seção Destaques -->
+
+		<!-- Início da Seção Sobre -->
+		<section class="secao-sobre" id="sobre">
+			<h2>Sobre Nós</h2>
+			<div class="linha"></div>
+			<div class="sobre-container">
+				<!-- <div class="imagem-sobre">
+					<img
+						src="https://unsplash.com/photos/cQbOSRpElxw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OXx8Y2hlZiUyMGtpdGNoZW58ZW58MHx8fHwxNjY0NDUxNzAx&force=true&w=640"
+						alt=""
+					/>
+				</div> -->
+				<div class="efeito-sobre">
+					<div class="div-efeito1">
+						<a href="https://unsplash.com/photos/-N2Jdazh03Y" target="_blank">
+							<div class="link-creditos-img-sobre">
+								<i class="fa-solid fa-up-right-from-square"></i>
+							</div>
+						</a>
+					</div>
+					<div class="div-efeito2">
+						<a href="https://unsplash.com/photos/QyvNH3HYSwU" target="_blank">
+							<div class="link-creditos-img-sobre">
+								<i class="fa-solid fa-up-right-from-square"></i>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="info-sobre">
+					<h3>
+						Somos apaixonados em
+						<span style="color: crimson; font-size: 64px">Culinária</span>
+					</h3>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum vero
+						optio corrupti porro necessitatibus autem iste magnam odio
+						voluptatum sit
+						<span style="color: crimson">ducimus voluptates</span>, quibusdam
+						natus tempora tenetur ipsam iusto officia sunt nostrum quae dicta
+						quam dolor sit amet consectetur adipisicing elit. Unde nesciunt
+						ducimus ut <span style="color: crimson">dolorem dolores</span>, in
+						rem dolor vel voluptas ipsa!
+					</p>
+					<p>
+						Dolorem voluptatum laudantium labore repudiandae error fuga beatae
+						esse incidunt
+						<span style="color: crimson">voluptatem unde est enim dolorum</span>
+						dignissimos voluptatibus possimus, asperiores, alias mollitia
+						placeat debitis, animi iure! Quaerat, aut.
+					</p>
+				</div>
+				<div class="efeito-sobre">
+					<div class="div-efeito3">
+						<a href="https://unsplash.com/photos/bpPTlXWTOvg" target="_blank">
+							<div class="link-creditos-img-sobre">
+								<i class="fa-solid fa-up-right-from-square"></i>
+							</div>
+						</a>
+					</div>
+					<div class="div-efeito4">
+						<a href="https://unsplash.com/photos/qPcSUERqBAc" target="_blank">
+							<div class="link-creditos-img-sobre">
+								<i class="fa-solid fa-up-right-from-square"></i>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fim da Seção Sobre -->
+
+		<section class="secao-contato" id="contato">
+			<h2>Contato</h2>
+			<div class="linha"></div>
+			<div class="container-contato">
+				<div class="contato-descricao">
+					<h3>Entre em contato conosco</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Perferendis, dignissimos tenetur alias similique accusamus
+						repudiandae mollitia! Veritatis ipsum pariatur nostrum doloribus,
+						iure ullam. Ut, aperiam pariatur cupiditate harum ipsum eaque soluta
+						minima et, nesciunt sunt asperiores laboriosam voluptatem ad quod.
+					</p>
+					<h4>Como podemos te ajudar</h4>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+						explicabo accusamus veritatis reiciendis delectus, praesentium
+						quibusdam, vel laudantium, quis facilis id atque itaque voluptate
+						sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Similique tenetur qui, sequi dolor ipsa laudantium ea voluptatum
+						architecto quia corrupti a dignissimos provident aperiam debitis!
+					</p>
+					<h4>Encontre-nos nas Redes Sociais</h4>
+					<div class="redes-sociais">
+						<a href="#"
+							><i class="icone-redes-sociais fa-brands fa-whatsapp"></i
+						></a>
+						<a href="#"
+							><i class="icone-redes-sociais fa-brands fa-facebook-f"></i
+						></a>
+						<a href="#"
+							><i class="icone-redes-sociais fa-brands fa-instagram"></i
+						></a>
+						<a href="#"
+							><i class="icone-redes-sociais fa-brands fa-youtube"></i
+						></a>
+						<a href="#"
+							><i class="icone-redes-sociais fa-brands fa-twitter"></i
+						></a>
+					</div>
+				</div>
+				<div class="contato-info">
+					<a href="https://unsplash.com/photos/bpPTlXWTOvg" target="_blank">
+						<div class="link-creditos-img-contato">
+							<i class="fa-solid fa-up-right-from-square"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Início do Rodapé -->
+		<footer class="footer">
+			<p>
+				Desenvolvido por
+				<a href="https://github.com/ViniciusAndradeR" target="_blank"
+					>Vinicius A. Ribeiro (GitHub)</a
+				>
+				em 03/10/2022.
+				<a href="./sobre-projeto.html" target="_blank"
+					>Clique aqui para saber mais sobre este Projeto.</a
+				>
+			</p>
+		</footer>
+		<!-- Fim do Rodapé -->
+		<script src="./js/script.js"></script>
+		<script src="./js/reviews.js"></script>
+		<script src="./js/itensProdutos.js"></script>
+		<script src="./js/produtosFuncoes.js"></script>
+	</body>
+</html>

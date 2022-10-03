@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/menu-topo.css" />
+		<link rel="stylesheet" href="./css/sobre-projeto.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Projeto - Restaurante</title>
+	</head>
+	<body>
+		<!-- Início do Menu Topo -->
+		<nav class="menu-topo" id="inicio">
+			<div class="logo">
+				<img
+					class="img-logo"
+					src="./imagens/icons/logo.png"
+					alt="Logo Restaurante"
+				/>
+				<p class="nome-restaurante">Nome do Restaurante</p>
+			</div>
+			<div class="menu-tela-larga">
+				<ul class="menu-lista">
+					<li class="item-lista">
+						<a href="./index.html#inicio">Página Inicial</a>
+					</li>
+					<li class="item-lista"><a href="./index.html#sobre">Sobre</a></li>
+					<li class="item-lista"><a href="./index.html#contato">Contato</a></li>
+				</ul>
+				<a href="./cardapio.html" class="btn">Cardápio</a>
+			</div>
+			<div class="menu-tela-pequena">
+				<div class="hamburger-lista">
+					<i class="fa-solid fa-burger"></i>
+				</div>
+			</div>
+		</nav>
+		<!-- Fim do Menu Topo -->
+
+		<!-- Início do Menu Toggle -->
+		<div class="menu-toggle esconder-menu-toggle">
+			<ul class="menu-lista-burger">
+				<li class="item-lista item-burger">
+					<a href="#inicio">Página Inicial</a>
+				</li>
+				<li class="item-lista item-burger"><a href="#sobre">Sobre</a></li>
+				<li class="item-lista item-burger"><a href="#contato">Contato</a></li>
+			</ul>
+		</div>
+		<!-- Fim do Menu Toggle -->
+
+		<div class="container-projeto">
+			<h1>Sobre o Projeto</h1>
+			<p>
+				Projeto desenvolvido com o objetivo de colocar em prática o que aprendi
+				durante meus últimos meses aprendendo <strong>HTML</strong>,
+				<strong>CSS</strong> e <strong>JavaScript</strong>.
+			</p>
+			<p>
+				Este foi meu primeiro projeto completo desenvolvido (desconsiderando
+				projetos simples como criação de páginas individuais para práticas). A
+				ideia era criar, do zero, toda uma identidade e design de um site de um
+				restaurante. Me inspirei em alguns modelos da plataforma
+				<a href="https://dribbble.com/" target="_blank">dribbble.com</a>, mais
+				especificamente
+				<a
+					href="https://dribbble.com/shots/19364233-Food-o-Restaurant-Web-Landing-Page"
+					target="_blank"
+					>neste modelo do Muhsin Ahmed</a
+				>.
+			</p>
+			<p>
+				Todas as imagens usadas no site pertencem à plataforma
+				<a href="https://unsplash.com" target="_blank">unsplash.com</a>, tive o
+				cuidado de deixar um botão em cada imagem levando o usuário do site para
+				os devidos créditos das imagens. Importante ressaltar que eu também tive
+				o cuidado de carregar as imagens com uma dimensão bem menor que a
+				original para que as páginas não fiquem muito pesadas para carregar.
+			</p>
+			<p>
+				Tanto as
+				<a href="./index.html#demo-modal" target="_blank">avaliações</a> quanto
+				os
+				<a href="./cardapio.html" target="_blank">produtos do Cardápio</a> foram
+				incluídos através de objetos armazenados em variáveis de arquivos em
+				JavaScript. Exemplo de um objeto:
+			</p>
+			<code
+				>{ <br />
+				id: 1, <br />
+				titulo: "Cheese Torto", <br />
+				categoria: "Lanche", <br />
+				img: "https://unsplash.com/photos/6X...",
+				<br />
+				descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Quia odio, vero magnam cumque provident assumenda quis sit dolorum
+				corrupti dignissimos.", <br />
+				preco: 29.99, <br />
+				destaque: true, <br />
+				credito: "https://unsplash.com/photos/6XmQV6GccYU" <br />
+				}</code
+			>
+			<p>
+				Dessa forma, é possível simular um site que gera conteúdo de forma
+				"dinâmica", adicionando os objetos em elementos HTML através da função
+				<b>innerHTML</b>. Pretendo reformular o site em breve para adicionar
+				esses dados através de um framework como o NodeJS.
+			</p>
+			<p>
+				Enfim, caso esteja lendo isso significa que, por algum motivo, se
+				interessou pelo meu projeto. Agradeço muito pela sua visita e, se
+				possível, peço a gentileza que deixe algum Feedback para mim através do
+				e-mail
+				<span style="color: crimson">vinicius.andrade125@gmail.com</span> ou, se
+				preferir, através de uma mensagem por
+				<a href="https://wa.me/5514999031377" target="_blank">WhatsApp</a>.
+			</p>
+		</div>
+
+		<!-- Início do Rodapé -->
+		<footer class="footer">
+			<p>
+				Desenvolvido por
+				<a href="https://github.com/ViniciusAndradeR" target="_blank"
+					>Vinicius A. Ribeiro (GitHub)</a
+				>
+				em 03/10/2022.
+			</p>
+		</footer>
+		<!-- Fim do Rodapé -->
+		<script src="./js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+.secao-contato {
+    text-align: center;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.secao-contato h2 {
+    color: rgb(182, 16, 49);
+    font-size: 36px;
+    padding-top: 32px;
+}
+
+.container-contato {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 90%;
+    margin: auto;
+}
+
+.contato-descricao {
+    padding-bottom: 48px;
+
+}
+
+.contato-descricao h3, .contato-descricao h4 {
+    margin: 24px 0 24px 0;
+}
+
+.contato-descricao p {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+.contato-info {
+    background: url('https://unsplash.com/photos/hVSpHsqsDJY/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NTJ8fGtpdGNoZW4lMjByZXN0YXVyYW50fGVufDB8Mnx8fDE2NjQ4MjIyNTY&force=true&w=640');
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 24px;
+}
+
+.link-creditos-img-contato {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 80px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+
+.redes-sociais {
+    font-size: 24px;
+}
+
+.redes-sociais a {
+    color: white;
+}
+
+.icone-redes-sociais {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    background-color: rgb(41, 104, 155);
+}
+
+
+
+@media only screen and (max-width: 880px) {
+    .contato-info {
+        display: none;
+    }
+
+    .container-contato {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .contato-descricao p {
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .redes-sociais {
+        font-size: 18px;
+    }
+    
+    .redes-sociais a {
+        color: white;
+    }
+    
+    .icone-redes-sociais {
+        margin-left: 4px;
+        margin-right: 4px;
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        border-radius: 50%;
+        background-color: rgb(41, 104, 155);
+    }
+}

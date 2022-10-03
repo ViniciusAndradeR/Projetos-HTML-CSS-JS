@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/menu-topo.css" />
+		<link rel="stylesheet" href="./css/cardapio.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Projeto - Restaurante</title>
+	</head>
+	<body>
+		<!-- Início do Menu Topo -->
+		<nav class="menu-topo" id="inicio">
+			<div class="logo">
+				<a href="./index.html">
+					<img
+						class="img-logo"
+						src="./imagens/icons/logo.png"
+						alt="Logo Restaurante"
+					/>
+				</a>
+				<p class="nome-restaurante">Nome do Restaurante</p>
+			</div>
+			<div class="menu-tela-larga">
+				<ul class="menu-lista">
+					<li class="item-lista">
+						<a href="./index.html#inicio">Página Inicial</a>
+					</li>
+					<li class="item-lista"><a href="./index.html#sobre">Sobre</a></li>
+					<li class="item-lista"><a href="./index.html#contato">Contato</a></li>
+				</ul>
+			</div>
+			<div class="menu-tela-pequena">
+				<div class="hamburger-lista">
+					<i class="fa-solid fa-burger"></i>
+				</div>
+			</div>
+		</nav>
+		<!-- Fim do Menu Topo -->
+
+		<!-- Início do Menu Toggle -->
+		<div class="menu-toggle esconder-menu-toggle">
+			<ul class="menu-lista-burger">
+				<li class="item-lista item-burger">
+					<a href="#inicio">Página Inicial</a>
+				</li>
+				<li class="item-lista item-burger"><a href="#sobre">Sobre</a></li>
+				<li class="item-lista item-burger"><a href="#contato">Contato</a></li>
+			</ul>
+		</div>
+		<!-- Fim do Menu Toggle -->
+
+		<div class="container-cardapio">
+			<div class="header">
+				<img
+					class="icone-cardapio"
+					src="./imagens/icons/cardapio.png"
+					alt="Ícone Cardápio"
+				/>
+			</div>
+			<div class="filtro-cardapio">
+				<button
+					class="btn-filtro"
+					id="Todos"
+					onclick="preencherProdutos(this.id)"
+				>
+					Todos
+				</button>
+				<button
+					class="btn-filtro"
+					id="Refeição"
+					onclick="preencherProdutos(this.id)"
+				>
+					Refeições
+				</button>
+				<button
+					class="btn-filtro"
+					id="Lanche"
+					onclick="preencherProdutos(this.id)"
+				>
+					Lanches
+				</button>
+				<button
+					class="btn-filtro"
+					id="Sobremesa"
+					onclick="preencherProdutos(this.id)"
+				>
+					Sobremesa
+				</button>
+				<button
+					class="btn-filtro"
+					id="Bebida"
+					onclick="preencherProdutos(this.id)"
+				>
+					Bebidas
+				</button>
+				<button
+					class="btn-filtro"
+					id="Bebida Alcoólica"
+					onclick="preencherProdutos(this.id)"
+				>
+					Bebidas Alcoólicas
+				</button>
+			</div>
+			<div class="conteudo-cardapio"></div>
+		</div>
+
+		<!-- Início do Rodapé -->
+		<footer class="footer">
+			<p>
+				Desenvolvido por
+				<a href="https://github.com/ViniciusAndradeR" target="_blank"
+					>Vinicius A. Ribeiro (GitHub)</a
+				>
+				em 03/10/2022.
+				<a href="./sobre-projeto.html" target="_blank"
+					>Clique aqui para saber mais sobre este Projeto.</a
+				>
+			</p>
+		</footer>
+		<!-- Fim do Rodapé -->
+		<script src="./js/script.js"></script>
+		<script src="./js/itensProdutos.js"></script>
+		<script src="./js/cardapioFuncoes.js"></script>
+	</body>
+</html>
